@@ -1,4 +1,5 @@
-##class Person {
+/*Solution
+class Person {
 protected:
     string name;
     int age;
@@ -63,8 +64,8 @@ int Student::count = 0;
 
 
 
-
-##full code
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+//Full Code 
 #include <cmath>
 #include <cstdio>
 #include <vector>
