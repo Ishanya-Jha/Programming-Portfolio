@@ -1,4 +1,4 @@
-//Solution
+/*Solution
 class D : public A, public B, public C
 {
     int val;
