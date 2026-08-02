@@ -1,10 +1,10 @@
-Change this line in HotelRoom:
+/*Change this line in HotelRoom:
 int get_price() {
 to:
 virtual int get_price() {
 That is the only change needed
-
-##code
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+//code
 #include <iostream>
 #include <vector>
 
