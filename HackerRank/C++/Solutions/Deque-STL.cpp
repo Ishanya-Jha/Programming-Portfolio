@@ -1,4 +1,5 @@
-##deque<int> d;
+//Solution
+deque<int> d;
 
 for (int i = 0; i < n; i++) {
     while (!d.empty() && d.front() <= i - k) {
@@ -19,8 +20,8 @@ for (int i = 0; i < n; i++) {
 cout << endl;
 
 
-
-##code
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+//Full Code
 #include <iostream>
 #include <deque> 
 using namespace std;
