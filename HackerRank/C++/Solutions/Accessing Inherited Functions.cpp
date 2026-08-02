@@ -1,4 +1,4 @@
-##sol
+//Solution
 class D : public A, public B, public C
 {
     int val;
@@ -33,8 +33,8 @@ public:
     void check(int); 
 };
 
-
-##code
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+//Full Code 
 #include<iostream>
 
 using namespace std;
