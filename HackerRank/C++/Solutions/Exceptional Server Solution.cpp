@@ -1,4 +1,5 @@
-##try {
+/*Solution
+try {
     cout << Server::compute(A, B) << endl;
 }
 catch (bad_alloc& e) {
@@ -11,7 +12,8 @@ catch (...) {
     cout << "Other Exception" << endl;
 }
 
-
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+//Full Code 
 #include <iostream>
 #include <exception>
 #include <string>
