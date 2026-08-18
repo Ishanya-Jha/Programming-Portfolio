@@ -4,19 +4,19 @@ public:
 
         vector<int> ans;
 
-        for (int i = 1; i <= nums.size(); i++) {
+        for (int i = 0; i < nums.size(); i++) {
 
-            int count = 0;
+            int index = abs(nums[i]) - 1;
 
-            for (int j = 0; j < nums.size(); j++) {
-
-                if (nums[j] == i) {
-                    count++;
-                }
+            if (nums[index] > 0) {
+                nums[index] = -nums[index];
             }
+        }
 
-            if (count == 0) {
-                ans.push_back(i);
+        for (int i = 0; i < nums.size(); i++) {
+
+            if (nums[i] > 0) {
+                ans.push_back(i + 1);
             }
         }
 
