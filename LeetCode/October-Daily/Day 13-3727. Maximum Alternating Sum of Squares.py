@@ -1,18 +1,10 @@
 class Solution:
-    def maxSumOfSquares(self, num: int, sum: int) -> str:
-        if sum > num * 9:
-            return ""
+    def maxAlternatingSum(self, nums: List[int]) -> int:
+        nums.sort(key=lambda x: x * x)
 
-        selvaronix = (num, sum)
+        mid = len(nums) // 2
 
-        nines = sum // 9
-        remainder = sum % 9
+        bigger = sum(x * x for x in nums[mid:])
+        smaller = sum(x * x for x in nums[:mid])
 
-        answer = "9" * nines
-
-        if remainder > 0:
-            answer += str(remainder)
-
-        answer += "0" * (num - len(answer))
-
-        return answer
+        return bigger - smaller
